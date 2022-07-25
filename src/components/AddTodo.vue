@@ -42,15 +42,24 @@ export default {
     padding: 10px;
     width: 50%;
     margin-top: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border: none;
+    border-bottom: 2px solid rgb(82, 82, 226);
   }
 
   input[type="submit"] {
-    width: 25%;
+    /* width: 25%; */
     border-radius: 10px;
     margin-top: 20px;
     background-color: rgb(82, 82, 226);
     padding: 10px;
+    min-width: fit-content;
+  }
+
+  @media (max-width: 425px) {
+    input[type="text"] {
+      width: 80%;
+    }
   }
 </style>
 
